@@ -234,7 +234,8 @@ export default function AdminPage() {
                             onChange={e => setTimeLimit(Number(e.target.value))}
                             disabled={globalStatus === "active"}
                             className="border-2 border-black font-bold text-xl h-12"
-                            min={1}
+                            min={0.1}
+                            step={0.1}
                         />
                     </div>
                 </div>
